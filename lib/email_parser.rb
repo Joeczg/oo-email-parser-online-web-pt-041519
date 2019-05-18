@@ -10,7 +10,9 @@ class EmailParser
     
   end
   def parse
-    @emails.split(/,\s*/)
+  @emails.split.collect {|address| address.split(',')} 
+  returnArr = splitEmail.flatten.uniq
+  returnArr
   
     
     

@@ -10,9 +10,9 @@ class EmailParser
     
   end
   def parse
-  @emails.split.collect {|address| address.split(',')} 
-  returnArr = splitEmail.flatten.uniq
-  returnArr
+  new_array= @emails.split.collect {|address| address.split(',')} 
+  new_array = splitEmail.flatten.uniq
+  new_array
   
     
     
